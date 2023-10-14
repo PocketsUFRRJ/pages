@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Estilizando o fundo da página */
+    body {
+      background: url('https://dunamismovement.com/wp-content/uploads/2021/10/meet-foto-desktop.png') no-repeat center center fixed;
+      background-size: cover;
+      filter: blur(0); /* Removendo o desfoque */
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative; /* Para posicionar a máscara */
+    }
+
+    /* Máscara de cor preta com 80% de opacidade */
+    body::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8); /* Cor preta com 80% de opacidade */
+    }
+
+    .container {
+      text-align: center;
+      position: relative; /* Posição relativa para posicionar os botões */
+      z-index: 1; /* Elevar os botões sobre a máscara */
+    }
+
+    /* Estilizando os botões */
+    .button {
+      display: block; /* Para que os botões fiquem um abaixo do outro */
+      margin: 0.5cm 0; /* Adicionando margem de meio centímetro entre os botões */
+      padding: 10px 20px;
+      background-color: orange;
+      color: white;
+      border: 2px solid black;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      font-family: Montserrat, Arial, sans-serif;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    }
+
+    .button:hover {
+      background-color: #ff6600;
+      transform: scale(1.05);
+    }
+
+    /* Estilizando títulos dos botões */
+    .button span {
+      display: block;
+    }
+
+    /* Redimensionando o botão do Whatsapp */
+    #whatsapp-button {
+      /* Você pode adicionar estilos específicos para o botão do Whatsapp aqui, se necessário */
+    }
+
+    /* Redimensionando o botão do Instagram */
+    #instagram-button {
+      /* Você pode adicionar estilos específicos para o botão do Instagram aqui, se necessário */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="https://chat.whatsapp.com/G5MCZAnyCE2EldWnUc4KTs" class="button" id="whatsapp-button">
+      <span>Grupo no Whatsapp</span>
+    </a>
+    <a href="https://www.instagram.com/pockets.ufrrj/" class="button" id="instagram-button">
+      <span>Nosso Instagram</span>
+    </a>
+  </div>
+</body>
+</html>
